@@ -1,0 +1,8 @@
+{
+  "name": "votespace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VoteSpace campus election frontend — HTML, CSS and JavaScript",
+  "scripts": { "start": "node server.js", "test": "node tests/api.test.js" },
+  "engines": { "node": ">=18" }
+}
