@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#14213d" />
+    <meta
+      name="description"
+      content="VoteSpace — a considered space for your campus voice. Explore elections, meet candidates, and make your choice."
+    />
+    <title>VoteSpace · Your voice, your choice</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/data.js"></script>
+    <script defer src="js/api.js"></script>
+    <script defer src="js/ui.js"></script>
+    <script defer src="js/auth.js"></script>
+    <script defer src="js/voter.js"></script>
+    <script defer src="js/ballot.js"></script>
+    <script defer src="js/admin.js"></script>
+    <script defer src="js/results.js"></script>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <a
+      class="skip-link"
+      href="#main"
+      onclick="
+        event.preventDefault();
+        document.getElementById('main')?.focus();
+        document.getElementById('main')?.scrollIntoView();
+      "
+      >Skip to content</a
+    >
+    <div id="app"></div>
+    <dialog id="modal" aria-labelledby="modal-title"></dialog>
+    <div id="toasts" aria-live="polite" aria-atomic="true"></div>
+    <noscript
+      ><p class="noscript">
+        Please enable JavaScript to use VoteSpace.
+      </p></noscript
+    >
+  </body>
+</html>
